@@ -49,21 +49,23 @@ compare(0,9)
 #Dla każdego z następujących typów odszukaj wartość, dla której funkcja `bool` zwróci `True` i taką dla której zwróci `False`: string,
 #krotka, integer, float.
 
-
+int()
 
 def checking_if(complexlist):
-    complexlist = []
     for part in complexlist:
-        if part is int():
-            print(part, "is an intiger")
-        elif part is str():
-            print(part, "is a string")
-        elif part is tuple:
-            print(part, "is a tuple")
-        elif part is float():
-            print(part, "is a float")
+        if type(part) is int:
+            print(part, '- is an integer')
+        elif type(part) is str:
+            print(part, '-is a string')
+        elif type(part) is tuple:
+            print(part, '-is a tuple')
+        elif type(part) is float:
+            print(part, '- is a float')
+        else:
+            print(part, 'is none of known')
 
-complexlist1 = ['ana', 123, ('krotka', "stokrotka", 'tokrotka'), 3.14]
+
+complexlist1 = ['ana', 1, ('krotka', 'stokrotka', 'tokrotka'), 3.14]
 checking_if(complexlist1)
     
 #Napisz funkcję, która jako argument przyjmie listę i zwróci `True` jeżeli wszystkie elementy na tej liście są prawdziwe, albo `False` jeżeli
@@ -71,9 +73,10 @@ checking_if(complexlist1)
 
 def checkinglist (list):
     for element in list:
-        element is True
-        if True:
-            return bool
+       if element == element:
+           print('ok')
+       else:
+           print('not ok')
 
 
-check_list(complexlist1)
+checkinglist(complexlist1)
